@@ -1,3 +1,5 @@
+"use client"
+
 import Tag from "@/components/ui/Tag";
 import Image from "next/image";
 import {
