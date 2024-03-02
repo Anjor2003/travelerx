@@ -9,7 +9,7 @@ const page = async () => {
   const user = await getCurrentUser();
   const posts = await prisma.blog.findMany({
     where: {
-      userEmail: user?.email ?? undefined,
+      userEmail: user?.email || undefined,
     },
     orderBy: {
       createdAt: "desc",
